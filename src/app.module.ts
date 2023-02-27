@@ -10,6 +10,7 @@ import { Dialect } from 'sequelize';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
+import { SearchModule } from './search/search.module';
 
 @Module({
   imports: [
@@ -45,6 +46,7 @@ import { UsersModule } from './users/users.module';
       },
     }),
     UsersModule,
+    SearchModule,
   ],
   controllers: [AppController],
   providers: [AppService],

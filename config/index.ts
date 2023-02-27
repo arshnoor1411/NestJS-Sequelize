@@ -9,4 +9,9 @@ export const applicationConfig = {
     user: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
   },
+
+  meilisearch: {
+    host: process.env.MEILISEARCH_HOST,
+    key: process.env.MEILISEARCH_KEY,
+  },
 };
